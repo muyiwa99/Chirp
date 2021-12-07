@@ -1,0 +1,455 @@
+a {
+  text-decoration: none; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.4;
+  background: #fdf7ed;
+  max-width: 100%; }
+
+#header {
+  height: 90vh;
+  margin: 1rem auto 4rem auto;
+  max-width: 1000px; }
+  #header #navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0; }
+    #header #navbar .logo h1 {
+      font-family: "Dancing Script", cursive;
+      font-weight: bold;
+      color: #357ded; }
+    #header #navbar .logo .check {
+      display: none; }
+    #header #navbar .nav ul {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center; }
+      #header #navbar .nav ul li {
+        margin-top: 0.9rem; }
+    #header #navbar .nav li,
+    #header #navbar .nav a {
+      list-style: none;
+      color: #555e62;
+      text-decoration: none; }
+    #header #navbar .nav .twitter-btn1 {
+      display: flex;
+      width: 190px;
+      border: none;
+      padding: 14px;
+      border-radius: 4px;
+      opacity: 0.85;
+      line-height: 10px;
+      text-decoration: none;
+      /* remove underline from anchors */
+      background-color: #1da1f2; }
+      #header #navbar .nav .twitter-btn1:hover {
+        opacity: 0.7;
+        color: #fff; }
+      #header #navbar .nav .twitter-btn1 img {
+        margin: 3px 0px 0 2px; }
+      #header #navbar .nav .twitter-btn1 p {
+        margin-top: 6px;
+        margin-left: 7px;
+        color: white;
+        font-size: 1.2rem; }
+  #header #content-section {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-top: 2rem; }
+    #header #content-section .at-1 {
+      width: 570px; }
+      #header #content-section .at-1 h2 {
+        font-size: 3.8rem;
+        font-weight: bold; }
+      #header #content-section .at-1 p {
+        margin: 15px 0;
+        line-height: 1.4;
+        color: #555e62; }
+      #header #content-section .at-1 .button-sect {
+        display: flex;
+        gap: 1rem;
+        margin: 1.5rem 0; }
+        #header #content-section .at-1 .button-sect h3 {
+          margin-top: 0.8rem;
+          color: #357ded;
+          font-size: 1.3rem; }
+        #header #content-section .at-1 .button-sect .twitter-btn2 {
+          display: flex;
+          width: 190px;
+          border: none;
+          border-radius: 4px;
+          opacity: 0.85;
+          line-height: 10px;
+          text-decoration: none;
+          /* remove underline from anchors */
+          background-color: #1da1f2; }
+          #header #content-section .at-1 .button-sect .twitter-btn2:hover {
+            opacity: 0.7;
+            color: #fff; }
+          #header #content-section .at-1 .button-sect .twitter-btn2 img {
+            margin: 3px 0px 0 14px; }
+          #header #content-section .at-1 .button-sect .twitter-btn2 p {
+            margin-left: 10px;
+            color: white;
+            font-size: 1.19rem; }
+      #header #content-section .at-1 .tx-2 {
+        font-size: 1.1rem;
+        margin-top: -1rem; }
+        #header #content-section .at-1 .tx-2 span {
+          color: #357ded;
+          font-weight: bolder; }
+    #header #content-section .at-2 .img-1 {
+      width: 100%;
+      height: auto;
+      display: block; }
+    #header #content-section .at-2 .img-2 {
+      display: none; }
+
+#main {
+  max-width: 100%;
+  background: #fff; }
+  #main #features-section {
+    height: 87vh;
+    width: 1000px;
+    margin: 1rem auto 0 auto;
+    background: #fff; }
+    #main #features-section .features {
+      font-size: 2rem;
+      margin-bottom: 3rem; }
+    #main #features-section .container {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-gap: 3.5rem; }
+      #main #features-section .container .cell {
+        border: #a09e9e solid 1px;
+        border-radius: 4px;
+        padding: 2rem; }
+        #main #features-section .container .cell i,
+        #main #features-section .container .cell h3 {
+          margin-bottom: 10px;
+          font-weight: bolder; }
+  #main .width {
+    width: 100%;
+    background: #d6f4ff; }
+    #main .width #customer-section {
+      margin: 1rem auto;
+      height: 60vh;
+      width: 1000px;
+      margin: 4rem auto 0 auto; }
+      #main .width #customer-section h2 {
+        font-size: 2rem;
+        position: relative;
+        top: 1.5rem;
+        margin-bottom: 4rem; }
+      #main .width #customer-section .container {
+        display: flex;
+        margin: 2rem auto;
+        width: 950px; }
+        #main .width #customer-section .container .twitter-cont {
+          bottom: 4rem;
+          background: #fff;
+          margin: 1rem;
+          width: 300px;
+          padding: 1rem;
+          border-radius: 4px;
+          height: fit-content; }
+          #main .width #customer-section .container .twitter-cont .top {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.8rem 0; }
+            #main .width #customer-section .container .twitter-cont .top p {
+              font-size: 0.95rem;
+              font-weight: bolder; }
+              #main .width #customer-section .container .twitter-cont .top p span {
+                font-size: 0.85rem;
+                color: #616b6b; }
+            #main .width #customer-section .container .twitter-cont .top .l {
+              margin-left: 6.5rem; }
+          #main .width #customer-section .container .twitter-cont .txt {
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: #616b6b;
+            line-height: 1.7; }
+          #main .width #customer-section .container .twitter-cont .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            #main .width #customer-section .container .twitter-cont .bottom .p,
+            #main .width #customer-section .container .twitter-cont .bottom p {
+              display: flex;
+              gap: 4px;
+              color: #616b6b; }
+        #main .width #customer-section .container .twitter-cont2 {
+          bottom: 4rem;
+          background: #fff;
+          margin: 1rem;
+          width: 300px;
+          padding: 1rem;
+          border-radius: 4px;
+          height: 260px; }
+          #main .width #customer-section .container .twitter-cont2 .top {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.8rem 0; }
+            #main .width #customer-section .container .twitter-cont2 .top p {
+              font-size: 0.95rem;
+              font-weight: bolder; }
+              #main .width #customer-section .container .twitter-cont2 .top p span {
+                font-size: 0.85rem;
+                color: #616b6b; }
+            #main .width #customer-section .container .twitter-cont2 .top .l {
+              margin-left: 6.5rem; }
+          #main .width #customer-section .container .twitter-cont2 .txt {
+            margin: 1rem 0 1rem 0;
+            font-size: 0.9rem;
+            color: #616b6b;
+            height: max-content;
+            line-height: 1.7; }
+          #main .width #customer-section .container .twitter-cont2 .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            #main .width #customer-section .container .twitter-cont2 .bottom .p,
+            #main .width #customer-section .container .twitter-cont2 .bottom p {
+              display: flex;
+              gap: 4px;
+              color: #616b6b; }
+  #main #price-page {
+    height: 100vh;
+    background: #fff;
+    width: 100%; }
+    #main #price-page .container {
+      margin: auto;
+      width: 30rem; }
+      #main #price-page .container .h2 {
+        font-size: 2.7rem;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 1rem; }
+      #main #price-page .container .p {
+        font-size: 1.3rem;
+        color: #616b6b;
+        text-align: center;
+        width: 380px;
+        margin: 0 0 2rem 2rem; }
+      #main #price-page .container .price-box {
+        background: #fdf6ed;
+        height: 420px;
+        width: 100%;
+        border: #e79b23 solid 1px;
+        border-radius: 8px;
+        justify-content: center;
+        margin-left: 0.55rem;
+        padding: 3rem; }
+        #main #price-page .container .price-box .cost {
+          display: flex;
+          flex-direction: column; }
+          #main #price-page .container .price-box .cost p {
+            font-size: 1.5rem;
+            color: #616b6b; }
+          #main #price-page .container .price-box .cost h2 {
+            font-size: 2.8rem;
+            display: flex; }
+            #main #price-page .container .price-box .cost h2 p {
+              font-size: 1.5rem;
+              color: #616b6b;
+              margin: 1.4rem 0 1rem 0; }
+        #main #price-page .container .price-box hr {
+          display: block;
+          width: 100%;
+          margin: 1rem 0 1.5rem 0;
+          border-left: none; }
+        #main #price-page .container .price-box .list ul,
+        #main #price-page .container .price-box .list li {
+          list-style: none;
+          margin: 1rem;
+          width: 100%;
+          justify-content: start; }
+          #main #price-page .container .price-box .list ul span,
+          #main #price-page .container .price-box .list li span {
+            word-spacing: 4;
+            color: #616b6b;
+            position: relative;
+            right: 1.2rem;
+            align-items: center; }
+          #main #price-page .container .price-box .list ul .fa-check-circle,
+          #main #price-page .container .price-box .list li .fa-check-circle {
+            color: #3bdb06;
+            position: relative;
+            right: 2rem; }
+        #main #price-page .container .price-box .twitter-btn1 {
+          display: flex;
+          width: 100%;
+          border: none;
+          padding: 14px;
+          border-radius: 4px;
+          opacity: 0.85;
+          line-height: 10px;
+          text-decoration: none;
+          /* remove underline from anchors */
+          background-color: #1da1f2;
+          margin-bottom: 2rem; }
+          #main #price-page .container .price-box .twitter-btn1:hover {
+            opacity: 0.7;
+            color: #fff; }
+          #main #price-page .container .price-box .twitter-btn1 img {
+            margin: 3px 0 0 70px; }
+          #main #price-page .container .price-box .twitter-btn1 p {
+            margin-top: 7px;
+            margin-left: 10px;
+            color: white;
+            font-size: 1.2rem; }
+  #main .footer {
+    height: 70px; }
+    #main .footer .content {
+      display: flex;
+      justify-content: space-between;
+      width: 900px;
+      margin: 1rem auto 0 auto; }
+      #main .footer .content h2 {
+        font-family: "Dancing Script", cursive;
+        font-weight: bold;
+        color: #357ded;
+        margin-top: 0.6rem; }
+      #main .footer .content .links {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 1rem; }
+        #main .footer .content .links a {
+          color: #000; }
+        #main .footer .content .links img {
+          height: 1.2rem; }
+
+@media only screen and (max-width: 800px) {
+  body {
+    max-width: 100%;
+    margin: 2rem auto;
+    overflow-x: hidden; }
+  #header {
+    width: 700px;
+    height: 150vh; }
+    #header #navbar {
+      margin: 2rem 2rem; }
+      #header #navbar .logo h1 {
+        font-size: 2rem;
+        margin-top: 0.5rem; }
+      #header #navbar .nav a {
+        font-size: 1.5rem; }
+    #header #content-section {
+      display: flex;
+      flex-direction: column-reverse; }
+      #header #content-section .at-2 .img-1 {
+        display: none; }
+      #header #content-section .at-2 .img-2 {
+        display: block;
+        width: 100%; }
+      #header #content-section .at-1 {
+        width: 100%; }
+        #header #content-section .at-1 h2 {
+          font-size: 5rem; }
+          #header #content-section .at-1 h2 br {
+            display: none; }
+        #header #content-section .at-1 p,
+        #header #content-section .at-1 .tx-2 {
+          font-size: 1.5rem; }
+  #main {
+    max-width: 100%;
+    margin: 2rem auto 2rem auto; }
+    #main #features-section {
+      width: 680px;
+      height: inherit; }
+      #main #features-section .features {
+        font-size: 3.2rem;
+        font-weight: bolder; }
+      #main #features-section .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+        #main #features-section .container h3,
+        #main #features-section .container p {
+          font-size: larger; }
+    #main .width {
+      width: 100%; }
+      #main .width #customer-section {
+        width: 680px;
+        display: flex;
+        flex-direction: column;
+        height: 115vh; }
+        #main .width #customer-section h2 {
+          font-size: 3rem; }
+        #main .width #customer-section .container {
+          flex-direction: column;
+          margin-top: -2rem; }
+          #main .width #customer-section .container .twitter-cont {
+            width: 600px; }
+            #main .width #customer-section .container .twitter-cont .top .l {
+              margin-left: 25rem; }
+          #main .width #customer-section .container .twitter-cont2 {
+            width: 600px;
+            height: 230px; }
+            #main .width #customer-section .container .twitter-cont2 .top .l {
+              margin-left: 25rem; }
+            #main .width #customer-section .container .twitter-cont2 .txt {
+              margin-bottom: 2rem; }
+    #main #price-page {
+      width: inherit;
+      height: 100vh; }
+      #main #price-page .container {
+        left: 10rem; }
+    #main .footer .content {
+      width: 600px; } }
+
+@media only screen and (max-width: 668px) {
+  body {
+    max-width: 600px;
+    margin: 2rem 0rem 1rem 0rem;
+    overflow-x: hidden; }
+  #header {
+    height: 200vh; }
+    #header .logo {
+      display: flex;
+      gap: 29rem; }
+      #header .logo .check {
+        display: block !important;
+        margin-top: 1rem; }
+    #header .nav {
+      display: none; }
+    #header #content-section {
+      margin: 0 3rem 0 2rem;
+      max-width: 580px; }
+      #header #content-section .at-2 .img-1 {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1rem; }
+      #header #content-section .at-2 .img-2 {
+        display: none; }
+      #header #content-section .at-1 {
+        width: 600px; }
+        #header #content-section .at-1 h2 {
+          font-size: 3rem; }
+        #header #content-section .at-1 p {
+          text-align: start;
+          font-size: 1.1rem;
+          max-width: 500px;
+          text-align: center; }
+        #header #content-section .at-1 .button-sect {
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          #header #content-section .at-1 .button-sect .twitter-btn2 {
+            width: 500px;
+            justify-content: center;
+            margin-left: 1rem; }
+  #main #features-section {
+    margin: 0 0rem 0 2.8rem; }
+    #main #features-section .container {
+      max-width: 500px; }
+  #main .width .twitter-cont {
+    width: 10px; } }
