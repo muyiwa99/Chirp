@@ -1,0 +1,427 @@
+@import "config";
+@import "utility";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.4;
+  background: $backg-1;
+  max-width: $website-width;
+}
+#header {
+  height: 90vh;
+  margin: 1rem auto 4rem auto;
+  max-width: 1000px;
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    .logo {
+      h1 {
+        font-family: "Dancing Script", cursive;
+        font-weight: bold;
+        color: #357ded;
+      }
+      .check {
+        display: none;
+      }
+    }
+    .nav {
+      ul {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+
+        li {
+          margin-top: 0.9rem;
+        }
+      }
+      li,
+      a {
+        list-style: none;
+        color: $text-color;
+        text-decoration: none;
+      }
+      .twitter-btn1 {
+        display: flex;
+        width: 190px;
+        border: none;
+        padding: 14px;
+        border-radius: 4px;
+        opacity: 0.85;
+        line-height: 10px;
+        text-decoration: none; /* remove underline from anchors */
+        background-color: $button-color;
+        &:hover {
+          opacity: 0.7;
+          color: #fff;
+        }
+
+        img {
+          margin: 3px 0px 0 2px;
+        }
+        p {
+          margin-top: 6px;
+          margin-left: 7px;
+          color: white;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  #content-section {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin-top: 2rem;
+
+    .at-1 {
+      width: 570px;
+      h2 {
+        font-size: 3.8rem;
+        font-weight: bold;
+      }
+      p {
+        margin: 15px 0;
+        line-height: 1.4;
+        color: $text-color;
+      }
+      .button-sect {
+        display: flex;
+        gap: 1rem;
+        margin: 1.5rem 0;
+        h3 {
+          margin-top: 0.8rem;
+          color: #357ded;
+          font-size: 1.3rem;
+        }
+        .twitter-btn2 {
+          display: flex;
+          width: 190px;
+          border: none;
+          border-radius: 4px;
+          opacity: 0.85;
+          line-height: 10px;
+          text-decoration: none; /* remove underline from anchors */
+          background-color: $button-color;
+          &:hover {
+            opacity: 0.7;
+            color: #fff;
+          }
+
+          img {
+            margin: 3px 0px 0 14px;
+          }
+          p {
+            margin-left: 10px;
+            color: white;
+            font-size: 1.19rem;
+          }
+        }
+        // .img-1 {
+        // }
+      }
+      .tx-2 {
+        font-size: 1.1rem;
+        margin-top: -1rem;
+        span {
+          color: #357ded;
+          font-weight: bolder;
+        }
+      }
+    }
+
+    .at-2 {
+      .img-1 {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      .img-2 {
+        display: none;
+      }
+    }
+  }
+}
+
+#main {
+  max-width: 100%;
+  background: $back-2;
+  #features-section {
+    height: 87vh;
+    width: 1000px;
+    margin: 1rem auto 0 auto;
+    background: $back-2;
+
+    .features {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr);
+      grid-gap: 3.5rem;
+      .cell {
+        border: rgb(160, 158, 158) solid 1px;
+        border-radius: 4px;
+        padding: 2rem;
+        i,
+        h3 {
+          margin-bottom: 10px;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  .width {
+    width: 100%;
+    background: $back-3;
+
+    #customer-section {
+      margin: 1rem auto;
+      height: 60vh;
+      width: 1000px;
+      margin: 4rem auto 0 auto;
+
+      h2 {
+        font-size: 2rem;
+        position: relative;
+        top: 1.5rem;
+        margin-bottom: 4rem;
+      }
+      .container {
+        display: flex;
+        margin: 2rem auto;
+        width: 950px;
+
+        .twitter-cont {
+          bottom: 4rem;
+          background: #fff;
+          margin: 1rem;
+          width: 300px;
+          padding: 1rem;
+          border-radius: 4px;
+          height: fit-content;
+
+          .top {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.8rem 0;
+            p {
+              font-size: 0.95rem;
+              font-weight: bolder;
+              span {
+                font-size: 0.85rem;
+                color: #616b6b;
+              }
+            }
+
+            .l {
+              margin-left: 6.5rem;
+            }
+          }
+          .txt {
+            margin: 1rem 0;
+            font-size: 0.9rem;
+            color: #616b6b;
+            line-height: 1.7;
+          }
+          .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .p,
+            p {
+              display: flex;
+              gap: 4px;
+              color: #616b6b;
+            }
+          }
+        }
+        .twitter-cont2 {
+          bottom: 4rem;
+          background: #fff;
+          margin: 1rem;
+          width: 300px;
+          padding: 1rem;
+          border-radius: 4px;
+          height: 260px;
+          .top {
+            display: flex;
+            gap: 0.5rem;
+            margin: 0.8rem 0;
+            p {
+              font-size: 0.95rem;
+              font-weight: bolder;
+              span {
+                font-size: 0.85rem;
+                color: #616b6b;
+              }
+            }
+
+            .l {
+              margin-left: 6.5rem;
+            }
+          }
+          .txt {
+            margin: 1rem 0 1rem 0;
+            font-size: 0.9rem;
+            color: #616b6b;
+            height: max-content;
+            line-height: 1.7;
+          }
+          .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .p,
+            p {
+              display: flex;
+              gap: 4px;
+              color: #616b6b;
+            }
+          }
+        }
+      }
+    }
+  }
+  #price-page {
+    height: 100vh;
+    background: $back-2;
+    width: 100%;
+    .container {
+      margin: auto;
+      width: 30rem;
+      .h2 {
+        font-size: 2.7rem;
+        font-weight: bolder;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      .p {
+        font-size: 1.3rem;
+        color: #616b6b;
+        text-align: center;
+        width: 380px;
+        margin: 0 0 2rem 2rem;
+      }
+      .price-box {
+        background: #fdf6ed;
+        height: 420px;
+        width: 100%;
+        border: #e79b23 solid 1px;
+        border-radius: 8px;
+        justify-content: center;
+        margin-left: 0.55rem;
+        padding: 3rem;
+        .cost {
+          display: flex;
+          flex-direction: column;
+          p {
+            font-size: 1.5rem;
+            color: #616b6b;
+          }
+          h2 {
+            font-size: 2.8rem;
+            display: flex;
+            p {
+              font-size: 1.5rem;
+              color: #616b6b;
+              margin: 1.4rem 0 1rem 0;
+            }
+          }
+        }
+
+        hr {
+          display: block;
+          width: 100%;
+          margin: 1rem 0 1.5rem 0;
+          border-left: none;
+        }
+
+        .list {
+          ul,
+          li {
+            list-style: none;
+            margin: 1rem;
+            width: 100%;
+            justify-content: start;
+            span {
+              word-spacing: 4;
+              color: #616b6b;
+              position: relative;
+              right: 1.2rem;
+              align-items: center;
+            }
+
+            .fa-check-circle {
+              color: #3bdb06;
+              position: relative;
+              right: 2rem;
+            }
+          }
+        }
+        .twitter-btn1 {
+          display: flex;
+          width: 100%;
+          border: none;
+          padding: 14px;
+          border-radius: 4px;
+          opacity: 0.85;
+          line-height: 10px;
+          text-decoration: none; /* remove underline from anchors */
+          background-color: $button-color;
+          margin-bottom: 2rem;
+          &:hover {
+            opacity: 0.7;
+            color: #fff;
+          }
+
+          img {
+            margin: 3px 0 0 70px;
+          }
+          p {
+            margin-top: 7px;
+            margin-left: 10px;
+            color: white;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    height: 70px;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      width: 900px;
+      margin: 1rem auto 0 auto;
+
+      h2 {
+        font-family: "Dancing Script", cursive;
+        font-weight: bold;
+        color: #357ded;
+        margin-top: 0.6rem;
+      }
+
+      .links {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 1rem;
+        a {
+          color: #000;
+        }
+        img {
+          height: 1.2rem;
+        }
+      }
+    }
+  }
+}
+@import "media";
+@import "mobile";
